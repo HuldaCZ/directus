@@ -1,6 +1,6 @@
 {
 	"name": "@directus/shared",
-	"version": "9.22.1",
+	"version": "9.22.4",
 	"description": "Code shared between all Directus packages",
 	"homepage": "https://directus.io",
 	"bugs": {
@@ -70,7 +70,7 @@
 		"fs-extra": "11.1.0",
 		"geojson": "0.5.0",
 		"joi": "17.7.0",
-		"knex": "2.3.0",
+		"knex": "2.4.1",
 		"knex-schema-inspector": "3.0.0",
 		"lodash": "4.17.21",
 		"micromustache": "8.0.3",
@@ -78,7 +78,8 @@
 		"pino": "8.8.0",
 		"vue": "3.2.45",
 		"vue-i18n": "9.2.2",
-		"vue-router": "4.1.6"
+		"vue-router": "4.1.6",
+		"zod": "^3.20.2"
 	},
 	"devDependencies": {
 		"@types/express": "4.17.15",

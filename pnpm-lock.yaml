@@ -22,7 +22,7 @@ importers:
       jest: 29.3.1
       jest-environment-node: 29.3.1
       json-to-graphql-query: 2.2.4
-      knex: 2.3.0
+      knex: 2.4.1
       lint-staged: 13.1.0
       listr2: 5.0.6
       lodash: 4.17.21
@@ -52,7 +52,7 @@ importers:
       jest: 29.3.1
       jest-environment-node: 29.3.1
       json-to-graphql-query: 2.2.4
-      knex: 2.3.0
+      knex: 2.4.1
       lint-staged: 13.1.0
       listr2: 5.0.6
       lodash: 4.17.21
@@ -162,7 +162,7 @@ importers:
       jsonwebtoken: 9.0.0
       keyv: 4.5.2
       keyv-memcache: 1.3.3
-      knex: 2.3.0
+      knex: 2.4.1
       knex-mock-client: 1.11.0
       knex-schema-inspector: 3.0.0
       ldapjs: 2.3.3
@@ -267,7 +267,7 @@ importers:
       json2csv: 5.0.7
       jsonwebtoken: 9.0.0
       keyv: 4.5.2
-      knex: 2.3.0_i7frrkiwsbjh7pywr5yuup4dni
+      knex: 2.4.1_i7frrkiwsbjh7pywr5yuup4dni
       knex-schema-inspector: 3.0.0
       ldapjs: 2.3.3
       liquidjs: 10.3.3
@@ -354,7 +354,7 @@ importers:
       '@vitest/coverage-c8': 0.26.2
       copyfiles: 2.4.1
       form-data: 4.0.0
-      knex-mock-client: 1.11.0_knex@2.3.0
+      knex-mock-client: 1.11.0_knex@2.4.1
       ts-node: 10.9.1_moeqx3xmzxqxagf2sz6mqkbb7m
       ts-node-dev: 2.0.0_moeqx3xmzxqxagf2sz6mqkbb7m
       typescript: 4.9.4
@@ -364,7 +364,7 @@ importers:
     specifiers:
       '@babel/core': 7.20.5
       '@babel/preset-env': 7.20.2
-      '@directus/docs': 9.22.0
+      '@directus/docs': 9.22.3
       '@directus/extensions-sdk': workspace:*
       '@directus/format-title': 10.0.0
       '@directus/shared': workspace:*
@@ -473,7 +473,7 @@ importers:
     devDependencies:
       '@babel/core': 7.20.5
       '@babel/preset-env': 7.20.2_@babel+core@7.20.5
-      '@directus/docs': 9.22.0
+      '@directus/docs': 9.22.3
       '@directus/extensions-sdk': link:../packages/extensions-sdk
       '@directus/format-title': 10.0.0
       '@directus/shared': link:../packages/shared
@@ -647,11 +647,11 @@ importers:
 
   packages/schema:
     specifiers:
-      knex: 2.3.0
+      knex: 2.4.1
       knex-schema-inspector: 3.0.0
       typescript: 4.9.4
     dependencies:
-      knex: 2.3.0
+      knex: 2.4.1
       knex-schema-inspector: 3.0.0
     devDependencies:
       typescript: 4.9.4
@@ -671,7 +671,7 @@ importers:
       fs-extra: 11.1.0
       geojson: 0.5.0
       joi: 17.7.0
-      knex: 2.3.0
+      knex: 2.4.1
       knex-schema-inspector: 3.0.0
       lodash: 4.17.21
       micromustache: 8.0.3
@@ -683,6 +683,7 @@ importers:
       vue: 3.2.45
       vue-i18n: 9.2.2
       vue-router: 4.1.6
+      zod: ^3.20.2
     dependencies:
       axios: 1.2.1
       date-fns: 2.29.3
@@ -690,7 +691,7 @@ importers:
       fs-extra: 11.1.0
       geojson: 0.5.0
       joi: 17.7.0
-      knex: 2.3.0
+      knex: 2.4.1
       knex-schema-inspector: 3.0.0
       lodash: 4.17.21
       micromustache: 8.0.3
@@ -699,6 +700,7 @@ importers:
       vue: 3.2.45
       vue-i18n: 9.2.2_vue@3.2.45
       vue-router: 4.1.6_vue@3.2.45
+      zod: 3.20.2
     devDependencies:
       '@types/express': 4.17.15
       '@types/fs-extra': 9.0.13
@@ -3650,8 +3652,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@directus/docs/9.22.0:
-    resolution: {integrity: sha512-L4C7AHi6/wC2Y4CgI3NJnS1pWXKIirNBvDdi41x9C9hgGyU49catXOJQb9W+HHcVsbh93Q7JwZzihnUhalAOug==}
+  /@directus/docs/9.22.3:
+    resolution: {integrity: sha512-zuL1iK9xDgGSG/0xW7QJdU7mt5k3FGoxnuN1EYoGeaMXn6KAAnME3R1kZijf3FhCt8cw8GLj2yX453bZK+SmlA==}
     dev: true
 
   /@directus/format-title/10.0.0:
@@ -8732,6 +8734,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: true
@@ -9027,7 +9030,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -9051,7 +9054,7 @@ packages:
       minipass-pipeline: 1.2.4
       mkdirp: 1.0.4
       p-map: 4.0.0
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 3.0.2
       ssri: 8.0.1
       tar: 6.1.13
@@ -11520,6 +11523,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -14260,13 +14264,13 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /knex-mock-client/1.11.0_knex@2.3.0:
+  /knex-mock-client/1.11.0_knex@2.4.1:
     resolution: {integrity: sha512-6Mf2jscz6XMVfk7Jhp7pnRe37HsupVfScPf8pyiL6X51B7sporDVQPra4oyj7Ea5ssuqE3XnVhRgUeP50+Yrog==}
     engines: {node: '>=12'}
     peerDependencies:
       knex: ^2.0.0
     dependencies:
-      knex: 2.3.0_i7frrkiwsbjh7pywr5yuup4dni
+      knex: 2.4.1_i7frrkiwsbjh7pywr5yuup4dni
       lodash.clonedeep: 4.5.0
     dev: true
 
@@ -14277,8 +14281,8 @@ packages:
       lodash.isnil: 4.0.0
     dev: false
 
-  /knex/2.3.0:
-    resolution: {integrity: sha512-WMizPaq9wRMkfnwKXKXgBZeZFOSHGdtoSz5SaLAVNs3WRDfawt9O89T4XyH52PETxjV8/kRk0Yf+8WBEP/zbYw==}
+  /knex/2.4.1:
+    resolution: {integrity: sha512-5wylehvnTOE8EdypPFakccA1zgo6Lp+TNultncvBUCUD0PasY+PLVa9qPrTFCioxPSPVha1u9ye2niAVVbLM0Q==}
     engines: {node: '>=12'}
     hasBin: true
     peerDependencies:
@@ -14322,8 +14326,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /knex/2.3.0_i7frrkiwsbjh7pywr5yuup4dni:
-    resolution: {integrity: sha512-WMizPaq9wRMkfnwKXKXgBZeZFOSHGdtoSz5SaLAVNs3WRDfawt9O89T4XyH52PETxjV8/kRk0Yf+8WBEP/zbYw==}
+  /knex/2.4.1_i7frrkiwsbjh7pywr5yuup4dni:
+    resolution: {integrity: sha512-5wylehvnTOE8EdypPFakccA1zgo6Lp+TNultncvBUCUD0PasY+PLVa9qPrTFCioxPSPVha1u9ye2niAVVbLM0Q==}
     engines: {node: '>=12'}
     hasBin: true
     peerDependencies:
@@ -15316,6 +15320,7 @@ packages:
 
   /nan/2.17.0:
     resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -17105,15 +17110,13 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /promise-inflight/1.0.1_bluebird@3.7.2:
+  /promise-inflight/1.0.1:
     resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
     peerDependencies:
       bluebird: '*'
     peerDependenciesMeta:
       bluebird:
         optional: true
-    dependencies:
-      bluebird: 3.7.2
 
   /promise-retry/2.0.1:
     resolution: {integrity: sha512-y+WKFlBR8BGXnsNlIHFGPZmyDf3DFMoLhaflAnyZgV6rG6xu+JwesTo2Q9R6XwYmtmwAFCkAk3e35jEdoeh/3g==}
@@ -21352,6 +21355,10 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  /zod/3.20.2:
+    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+    dev: false
 
   /zwitch/1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
